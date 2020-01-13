@@ -1,0 +1,16 @@
+package javaapp;
+
+public class Final {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+	
+		Dip d =new Dip();
+		System.out.println(d.KI);
+	}
+
+}
+class Dip
+{
+	final double KI=21;
+}

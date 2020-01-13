@@ -1,0 +1,14 @@
+package javaapp;
+
+public class Final {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+	
+		final double KI=21;
+		System.out.println(KI);
+	
+	}
+
+}
+

@@ -1,0 +1,5 @@
+package javaapp.bean.dao;
+
+public interface EmployDAO {
+
+}

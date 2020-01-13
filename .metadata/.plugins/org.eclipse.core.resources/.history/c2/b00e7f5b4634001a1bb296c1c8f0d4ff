@@ -1,0 +1,5 @@
+package javaapp.daoimpl;
+
+public class EmployDAOImpl implements EmployDAO{
+ArrayList<Employ> list =null;
+}

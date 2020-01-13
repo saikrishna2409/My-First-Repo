@@ -1,0 +1,22 @@
+package javaapp;
+
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.util.Scanner;
+
+public class ClassFilehandling {
+
+	public static void main(String[] args) throws IOException {
+		// TODO Auto-generated method stub
+		String Path ="C:\\Users\\DELL\\Desktop\\data.txt";
+		FileOutputStream fout =new FileOutputStream(Path);
+		//String msg="Welcome to file handling";
+		Scanner sc =new Scanner(System.in);
+		String msg =sc.nextLine();
+		byte [] b =msg.getBytes();
+		fout.write(b);
+		fout.close();
+		
+	}
+
+}

@@ -1,0 +1,25 @@
+package javaapp;
+abstract class Test
+{
+	abstract public void display();
+	
+}
+public class An {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Test t =new Test()
+				{
+					@Override
+					public void display()
+					{
+						System.out.println("Good Morning");
+					}
+				};
+			
+		t.display();
+				}
+	}
+
+
+

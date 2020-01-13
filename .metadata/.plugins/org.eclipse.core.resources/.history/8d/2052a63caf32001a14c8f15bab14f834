@@ -1,0 +1,19 @@
+package javaapp;
+
+public class StringDemo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String a ="Chennai";
+		String b ="Thor";
+		String c ="Kri";
+		c = "Hyd";
+		System.out.println(a.equals(c));
+		if (a==b)
+			System.out.println("True");
+		else
+			System.out.println("False");
+
+	}
+
+}

@@ -1,0 +1,16 @@
+package javaapp;
+
+public class ClassFilehandling {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String Path ="C:\\Users\\DELL\\Desktop\\data.txt";
+		FileOutputStream fout =new FileOutputStream(Path);
+		String msg="Welcome to file handling";
+		byte [] b =msg.getBytes();
+		fout.writ(b);
+		fout.close();
+		
+	}
+
+}
