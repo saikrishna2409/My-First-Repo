@@ -1,0 +1,48 @@
+package javaapp.date;
+
+import java.time.LocalDate;
+import java.time.MonthDay;
+import java.util.Date;
+
+public class DateModels {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//Date date =new Date(0);
+//		LocalDate date=LocalDate.now();
+//		System.out.println("today's date is :"+date);
+//		int day=date.getDayOfMonth();
+//		int month=date.getMonthValue();
+//		int year=date.getYear();
+//		
+//		System.out.printf("Year : %d , Month : %d , Day : %d \t %n",year,month,day);
+//
+//		LocalDate birthday=LocalDate.of(1997, 9, 24);
+//		
+//		System.out.println("Your birthday is :"+birthday);
+//		LocalDate today=LocalDate.now();
+//		LocalDate birthday=LocalDate.of(1997, 9, 24);
+//		
+//		if(birthday.equals(today))
+//		{
+//			System.out.printf("Today %s and birthday %s are same dates %n",today,birthday);
+//		}
+//		else
+//		{
+//			System.out.println("Dates are not Equal");
+//		}
+		LocalDate today=LocalDate.now();
+		LocalDate birthday=LocalDate.of(1997, 9, 24);
+		MonthDay birth=MonthDay.of(birthday.getMonthValue(), birthday.getDayOfMonth());
+		MonthDay current=MonthDay.from(today);
+		if(birth.equals(current))
+		{
+			System.out.printf("Today %s and birthday %s are same dates %n",today,birthday);
+		}
+		else
+		{
+			System.out.println("Dates are not Equal");
+		}
+	}
+
+}

@@ -23,9 +23,16 @@ public class LambdaExpressions {
 	//t.start();
 		//Hello  h=(int a,int b) ->a+b;
 		//	System.out.println("This is Lambda Expression "+h.add(10,20));
-		Hello h =(a,b) -> a+b;
-		System.out.println(h.add(10,20));
-			
+	//	Hello h =(a,b) -> a+b;
+		//System.out.println(h.add(10,20));
+			Runnable r =()->{
+				for(int i=1;i<=10;i++)
+				{
+					System.out.println(i);
+					Thread.sleep(2000);
+				}
+			}
+	}
 		
 	}
 

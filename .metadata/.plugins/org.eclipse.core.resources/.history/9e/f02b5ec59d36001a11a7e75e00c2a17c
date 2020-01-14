@@ -1,0 +1,21 @@
+package javaapp.date;
+
+import java.time.LocalDate;
+import java.util.Date;
+
+public class DateModels {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//Date date =new Date(0);
+		LocalDate date=LocalDate.now();
+		System.out.println("today's date is :"+date);
+		int day=date.getDayOfMonth();
+		int month=date.getMonthValue();
+		int year=date.getYear();
+		
+		System.out.printf("Year : %d , Month : %d , Day : %d \t %n",year,month,day);
+
+	}
+
+}

@@ -1,12 +1,22 @@
 package javaapp;
 
-public class Em implements Comparable<Em>{
+import java.io.Serializable;
+
+public class Em implements Serializable{
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 6498461418305072738L;
+	/**
+	 * 
+	 */
+
 	private int id;
 	private String name;
-	private String address;
+	transient private String address;
 	private int age;
 	private double phone;
-	private double salary;
+	transient private double salary;
 	public Em()
 	{
 		
@@ -53,7 +63,7 @@ public class Em implements Comparable<Em>{
 	public double getSalary() {
 		return salary;
 	}
-	public void setSalary(double salary) {
+	public void setSalary() {
 		this.salary = salary;
 	}
 	@Override
@@ -62,7 +72,7 @@ public class Em implements Comparable<Em>{
 		//		+ ", salary=" + salary + "]";
 		return id+ ":"+name+":"+address+":"+age+":"+phone+":"+salary ;
 	}
-	@Override
+/*	@Override
 	public int compareTo(Em e) {
 		// TODO Auto-generated method stub
 		if(this.id >e.id)
@@ -72,7 +82,7 @@ public class Em implements Comparable<Em>{
 		else
 			return 1;
 		
-	}
+	}*/
 	
 	
 
