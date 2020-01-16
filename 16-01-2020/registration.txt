@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+​
+<head>
+​
+    <title>Home Page of ShowOnWheels</title>
+    <link type="text/css" rel="stylesheet" href="ExternalStylesheet/homestylesheet.css" />
+​
+</head>
+​
+<body>
+​
+    <div id="mainDivContainer" style="position: relative; width: 100%; margin-top: 0px; margin-bottom: 0px;">
+​
+        <div style="width: 960px;  margin-top: 5px; margin-left: auto; margin-right:auto">
+​
+                    <div style="width: 960px; height:80px;">
+​
+                   		 <img id="logo" src="images\Logo.png" width="500" height="100">
+​
+                   			
+                    <h5>For Enquiry<br>
+​
+                        Call Us 9225648543
+​
+                    </h5>
+		 <img id="callus" src="images\callus.png">
+			</div>
+​
+​
+                    <div style="width:500px; height:20px; float:left; text-align:center;">
+                    <span class="auto-style1"><B>The Ultimate Way For Booking Movie Tickets</B></span>
+​
+		                </div>
+​
+                 
+            <div id="topnav" style="float:left;width: 960px; height: 20px; word-spacing: 5px; font-size: 90%; padding-left:60px; padding-top: 6px; white-space: nowrap; text-align:left; background-color: black;">
+                    <nav>
+			
+			 <a href="home.html">Home</a> |
+                        <a href="aboutus.html">About Us</a> |
+​
+                        <a href="contactus.html">Contact Us</a> |
+​
+                        <a href="upcomingmovies.html">Upcoming Movies</a> |
+                        <a href="Registration.html">Registration</a>
+​
+                  </nav>
+   
+           </div>
+​
+    <div style="width: 960px; height: auto; position: relative; margin:0px; padding: 29px; overflow: hidden; background-color: white;"></div>
+    <p><h3>Books your tickets online</h3></p>
+    <form>  
+        <label for="Name"> Name: </label> <br/>  
+              <input type="text" id="Name" name="Name"/> <br/>  
+        <label for="Date of bookings">Date of bookings: </label>  
+              <input type="date" id="Date of bookings" name="Date of bookings"/> <br/>
+         <label for="show timmings">show timmings: </label>  
+              <input type="text" id="show timmings" name="show timmings"/> <br/>
+        <label for="Select Class">Select Class: </label>  
+              <input type="text" id="Select Class" name="Select Class"/> <br/>
+        <label for="Price">Price: </label>  
+              <input type="text" id="Price" name="Price"/> <br/>
+         <label for="Number of Tickets">Number of Tickets: </label>  
+              <input type="text" id="Number of bookings" name="Number of bookings"/> <br/>
+        <label for="Total Price">Total Price: </label>  
+              <input type="text" id="Total Price" name="Total Price"/> <br/>
+              <select>
+                <option value="bee">Bee</option>
+                <option value="alvin">Alvin</option>
+                <option value="amy">Amy</option>
+                <option value="bolt">Bolt</option>
+                <option value="wolf">Wolf</option>
+
+              </select><br/>
+             <h3>Movie Time:</h3>
+             <input type="radio" name="time" >|9.00 am
+             <input type="radio" name="time" >|12.00 pm
+             <input type="radio" name="time" >|3.00 pm
+             <input type="radio" name="time" >|6.00 pm<br/>
+             <h3>Select Class</h3>
+             <input type="radio" name="class" >|A class
+             <input type="radio" name="class" >|B class
+             <input type="radio" name="class" >|C class<br/>
+
+             <button type="button">Submit</button>
+             <button type="button">Clear</button>
+            
+             
+
+     </form>  
+    </div>
+     </body>
+</body>
+</html>

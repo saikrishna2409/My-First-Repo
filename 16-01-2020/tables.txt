@@ -1,0 +1,36 @@
+<!DOCTYPE>
+<html>  
+<head>
+<style>  
+table, th, td {  
+    border: 1px solid black;  
+    border-collapse: collapse;  
+}  
+th, td {  
+    padding: 10px;  
+}  
+table#alter tr:nth-child(even) {  
+    background-color: #fff;  
+}  
+table#alter tr:nth-child(odd) {  
+    background-color: #eee;  
+}  
+
+</style>  
+</head>
+<body>  
+   <p><h2>Here are some courses i have taken</h2></p>
+<table id="alter">  
+<tr><th>Course Number</th><th>Course Title</th><th>Semester Taken</th></tr>  
+<tr><td colspan ="3" align="center">For Credit</td></tr>  
+<tr><td>6.813</td><td>UserInterface Design</td><td>Spring 2014</td></tr>  
+<tr><td>6.034</td><td>Artificial Intelligence</td><td>Fall 2013</td></tr> 
+<tr><td>6.006</td><td>Introducing Algorithms</td><td>Fall 2013</td></tr>  
+<tr><td colspan ="3" align="center">Listener</td></tr>  
+<tr><td>6.867</td><td>Machine Learning</td><td>Fall 2013</td></tr>  
+<tr><td>6.830</td><td>Database</td><td>Fall 2012</td></tr> 
+</table>   
+</body>
+</html>  
+
+ 
