@@ -1,0 +1,135 @@
+// // //console.log("Hello World!");
+// // test()
+// // let name='Amit'
+// // //let name='Rahul'
+// // name='Rahul'
+// // //console.log("Name: ",name)
+// // function test()
+// // {
+// //     // var name="krishna"
+// //     // {
+// //     //     var name ="Pankaj"
+// //     // }
+// //     // // for(var index =0;index<5;index++)
+// //     // // {
+// //     // //     console.log("Index:"+index);
+// //     // //     var name='Krishna'
+// //     // // }
+// //     // // console.log("Value of Index:"+index);
+// //     // console.log("Name :"+name);
+// //     for(let index =0;index<5;index++)
+// //     {
+// //          console.log("Index:"+index);
+// //         // var name='Krishna'
+// //      }
+// //      console.log("Value of Index:"+index);
+// // }
+// // //console.log("Name :"+name);
+// const sum =function(a,b)
+// {
+//     return a+b;
+// }
+// console.log(sum(2,3));
+// console.log("hello world")  
+// console.log("Welcome to javaTpoint.com"); console.log("You are learning the ES6 tutorial"); 
+// let rates = [
+//     {
+//         "name": "30 years fixed",
+//         "rate": "13",
+//         "years": "30"
+//     },
+//     {
+//         "name": "20 years fixed",
+//         "rate": "2.8",
+//         "years": "20"
+//     }
+// ];
+// export let findAll = () => new Promise((resolve, reject) => {
+//     if (rates) {
+//         resolve(rates);
+//     } else {
+//         reject("No rates");
+//     }
+// });
+// const promise = new Promise(function(accepteresolve, reject)  {
+//     //asynchronous code goes here
+//     let isclean =true;
+//     if(isclean)
+//     {
+//         console.log("Clean");
+//     }
+//     else{
+//         console.log("Not clean");
+//     }
+//   })
+//   promise.then(function())
+//   {
+//       console.log("Exit");
+//   };
+// var asynchronousFunction =function()
+// {
+//     return new Promise(function(resolve,reject){
+//         console.log("Keep every promise you make and only make promises that you can keep");
+//         setTimeout(resolve,5000)
+//     })
+// }
+// asynchronousFunction()
+//     .then(asynchronousFunction)
+//     .then(asynchronousFunction)
+// const myPromise =new Promise((resolve,reject)=>{
+//     if(Math.random()*100<=50){
+//         resolve("Hello Promises!");
+//     }
+//     reject(new Error("In 10% of the cases,I fail.Miserably."));
+// });
+// const onResolved =(resolvedValue)=>console.log(resolvedValue);
+// const onRejected =(error)=>console.log(error);
+// myPromise.then(onResolved,onRejected);
+var fs = require('fs');
+let sampletext = "This is the sample text that will go in the file.";
+new Promise((resolve, reject) => {
+    fs.mkdir('hello', function (err) {
+        if (err) {
+            console.error("Error in creating directory!");
+        } else {
+            console.log('The Directory Hello is created!!');
+        }
+    })
+ resolve();
+})
+    .then(() => {
+        fs.writeFile('.//hello//write.txt', sampletext, function (err) {
+            if (err) {
+                console.error("Error in writing the file!");
+            } else {
+                console.log('The data is written in the file!');
+            }
+        })
+    })
+    .catch(() => {
+        console.log('The Data is Not Written');
+    })
+    .then(() => {
+        fs.readFile('.//hello//write.txt', 'utf8', function (err, data) {
+            if (err) {
+                console.log("Error in reading file!");
+            } else {
+                console.log(data);
+                fs.unlink('.//hello//write.txt', function (err) {
+                    if (err) {
+                        console.error("Error deleting file!");
+                    }
+                    else {
+                        fs.rmdir('hello', function () { });
+                        console.log('The Directory is deleted Successfully');
+                    }
+                });
+            }
+        })
+    })
+
+
+
+
+
+

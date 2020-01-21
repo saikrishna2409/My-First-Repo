@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>DEmo</title>
+    </head>
+    <body>
+    <!-- <p>paragraph one</p>
+<p>paragraph two</p>
+<div>div one</div>
+<p>paragraph three</p>
+<div>div two</div>
+<p>paragraph four</p></br>
+<div>
+    <strong>MY Name is</strong>
+</div>
+<div>
+    <strong>heo</strong>
+  </div>
+  <div>
+
+  </div> -->
+  <!-- <div>
+      Hello
+  </div> -->
+  <div contenteditable=true>hello</div>
+
+<!-- <button onclick=boo>Remove</button> -->
+
+<script>
+// var firstDiv = document.querySelector('div');
+// firstDiv.style.color = 'red';
+// firstDiv.style.fontSize = '50px';
+
+// var paragraphs = document.querySelectorAll('p');
+// for(var p of paragraphs)
+//   p.style.color = 'blue';
+
+// //   var btn = document.querySelector('button');
+// // btn.addEventListener('click', foo);
+// // function foo() { alert('hello'); }
+
+// var btn1 = document.querySelector('button');
+// btn1.addEventListener('click', boo);
+// function boo() { alert('hello krishna'); }
+// var pEle = document.createElement('p')
+// var div = document.querySelector('div');
+// var strong = document.querySelector('strong');
+// var strong = document.createElement('strong');
+// var strong = document.createElement('em');
+// strong.textContent = 'Hello';
+// div.appendChild(strong);
+// //div.removeChild(strong);
+// div.replaceChild(em, strong);
+// //var strong = document.querySelector('strong');
+// var copy = strong.cloneNode(true);
+// //var div = document.querySelector('div');
+// div.appendChild(copy);
+// div.insertBefore(em, strong);
+// var style = getComputedStyle(document.querySelector('div'));
+// alert(style.width);
+// var div = document.querySelector('div');
+// div.setAttribute('contenteditable', '')
+// var div = document.querySelector('div');
+// alert(div.getAttribute('contenteditable'))
+var div = document.querySelector('div');
+div.removeAttribute('contenteditable');
+
+</script>
+
+    </body>
+</html>
+
