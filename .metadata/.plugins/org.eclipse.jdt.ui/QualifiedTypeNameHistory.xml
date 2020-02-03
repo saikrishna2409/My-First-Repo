@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="java.sql.Connection"/>
-<fullyQualifiedTypeName name="java.io.File"/>
-<fullyQualifiedTypeName name="java.io.FileWriter"/>
 <fullyQualifiedTypeName name="java.io.BufferedWriter"/>
 <fullyQualifiedTypeName name="java.nio.file.FileSystem"/>
 <fullyQualifiedTypeName name="java.nio.file.FileSystems"/>
@@ -52,7 +49,6 @@
 <fullyQualifiedTypeName name="javax.security.auth.login.Configuration"/>
 <fullyQualifiedTypeName name="java.lang.Override"/>
 <fullyQualifiedTypeName name="com.sun.xml.bind.annotation.OverrideAnnotationOf"/>
-<fullyQualifiedTypeName name="java.util.List"/>
 <fullyQualifiedTypeName name="com.cts.training.model.Company"/>
 <fullyQualifiedTypeName name="java.io.Serializable"/>
 <fullyQualifiedTypeName name="javax.persistence.Entity"/>
@@ -60,4 +56,8 @@
 <fullyQualifiedTypeName name="javax.persistence.Id"/>
 <fullyQualifiedTypeName name="javax.persistence.Column"/>
 <fullyQualifiedTypeName name="com.cts.training.model.StockExchange"/>
+<fullyQualifiedTypeName name="com.cts.training.dao.UserDAO"/>
+<fullyQualifiedTypeName name="com.cts.training.hibernate.HibernateUtil"/>
+<fullyQualifiedTypeName name="org.hibernate.SessionFactory"/>
+<fullyQualifiedTypeName name="java.util.List"/>
 </qualifiedTypeNameHistroy>
