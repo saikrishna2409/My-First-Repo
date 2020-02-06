@@ -4,5 +4,4 @@ INDEX VERSION 1.4+C:\Users\DELL\Desktop\gitrepository\My-First-Repo\.metadata\.p
 8088856.index
 2725383376.index
 1263253994.index
-344845670.index
 2240853871.index
