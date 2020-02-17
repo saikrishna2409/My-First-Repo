@@ -160,6 +160,15 @@ Day 38
 	Filter
 	Through Xml
 	Through Java Cponfiguration
+Day 39
+15-02-2020
+----------
+	Internal HAckathon 
+Day 40
+17-02-2020
+---------
+	Data authentication from database using spring
+	SQL concepts
 
 
 
