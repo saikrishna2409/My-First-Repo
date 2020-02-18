@@ -169,6 +169,10 @@ Day 40
 ---------
 	Data authentication from database using spring
 	SQL concepts
+Day 41
+18-02-2020
+-----------
+	SQL and PLSQL 
 
 
 
