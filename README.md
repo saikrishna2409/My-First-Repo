@@ -167,12 +167,34 @@ Day 39
 Day 40
 17-02-2020
 ---------
-	Data authentication from database using spring
-	SQL concepts
+	New Mentor..
+	-----------
+	Spring Security from data base users
+	Sql Joins
+	Sql sub queries
+
 Day 41
 18-02-2020
 -----------
-	SQL and PLSQL 
+	PLSQL 
+		:
+		SQL procedures
+		SQL functions
+		SQL Triggers
+		SQL Views
+Day 42
+19-2-2020
+----------
+
+	Spring Rest Services.
+	Spring Booting Sample Project
+
+Day 43
+20-02-2020
+------------
+	Spring boot rest
+
+	
 
 
 
