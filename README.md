@@ -193,6 +193,21 @@ Day 43
 20-02-2020
 ------------
 	Spring boot rest
+Day 44 
+21-02-2020
+-----------
+	SpringBootSecurity
+	Introduction Of SpringRestApi
+Day 45
+22-02-2020
+------------
+	Project Work Using SpringRest
+
+Day 46 
+23-02-2020
+-----------
+	Project Work
+	
 
 	
 

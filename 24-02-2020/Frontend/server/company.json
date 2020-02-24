@@ -1,0 +1,22 @@
+{
+  "company": [
+    {
+      "id": -1,
+      "sector": "sshjfd",
+      "companyname": "sdv",
+      "ceo": "ffac",
+      "bod": "wagd",
+      "stockList": "NSE",
+      "turnover": -1
+    },
+    {
+      "id": 123,
+      "sector": "bnm",
+      "companyname": "bnm",
+      "ceo": "bnm",
+      "bod": "nbnm,",
+      "stockList": "BSE",
+      "turnover": 1234567890
+    }
+  ]
+}

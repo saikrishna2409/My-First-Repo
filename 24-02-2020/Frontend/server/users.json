@@ -1,0 +1,20 @@
+{
+  "users": [
+    {
+      "id": 101,
+      "username": "krishna",
+      "password": 1234,
+      "rpassword": 1234,
+      "email": "sai@gmail.com",
+      "mobile": 67649
+    },
+    {
+      "id": 102,
+      "username": "sai",
+      "password": "909",
+      "rpassword": "909",
+      "email": "anil@gmail.com",
+      "mobile": 92370732
+    }
+  ]
+}
