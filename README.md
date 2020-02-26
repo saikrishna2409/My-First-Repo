@@ -204,9 +204,20 @@ Day 45
 	Project Work Using SpringRest
 
 Day 46 
-23-02-2020
+24-02-2020
 -----------
 	Project Work
+
+Day 47
+25-02-2020
+----------
+	project
+	email activation
+
+Day 48
+26-02-2020
+----------
+	project
 	
 
 	
