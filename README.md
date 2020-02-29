@@ -232,6 +232,11 @@ Day 50
 -------
 	Introduction to microservices
 	project work
+
+Day 51
+29-02-2020
+-------
+	Hackthon on Angular(codesprint)
 	
 
 
