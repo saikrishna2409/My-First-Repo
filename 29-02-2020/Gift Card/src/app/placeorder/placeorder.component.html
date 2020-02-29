@@ -1,0 +1,278 @@
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>placeOrder</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+</head>
+
+<div class="container-fluid" style="min-height: 60vh;">
+    <div class="container-fluid">
+        <div class="row my-2">
+            <div class="col-2 bg-transparent border">
+             <div class="sidenav" >
+                 <!-- <div class="list-group list-group-flush"> -->
+                   <a routerLink="/home" id="widget" class="list-group-item list-group-item-action bg-transparent btn-lg text-dark">Home</a>
+                   <a routerLink="/placeorder" id="widget" class="list-group-item list-group-item-action bg-transparent btn-lg text-dark">Place Order</a>
+                   <a routerLink="/view" id="widget" class="list-group-item list-group-item-action bg-transparent btn-lg text-dark">View Orders</a>
+                   <a routerLink="/contact" id="widget" class="list-group-item list-group-item-action bg-transparent btn-lg text-dark">Contacts</a>
+                 <!-- </div> -->
+                 </div>        
+            </div> 
+            <div class="col bg-transparent mx-2">
+                <div class="row text-dark text-fine p-3">
+
+    <div class=" bg-transparent text-center text-dark">
+        <!-- <div class="h1">PlaceOrder</div> -->
+    </div>
+    <div class="container bg-transparent">
+        <div class="row">
+            <div class="col">
+                <!-- <div class="card shadow bg-transparent">
+                    <div class="card-body bg-transparent">
+                        <form [formGroup]="checker" >
+                            <div class="jumbotron bg-dark">
+
+                                <div class="input-group mb-3">
+                                    
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text text-info">ID</span>
+                                    </div>
+                                   
+                                    <input type="number" id="id" name="id" formControlName="id"
+                                       required />
+                                </div>
+                                
+                                <div class="input-group mb-3">
+                                    
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text text-info">Gift Card Amount</span>
+                                    </div>
+                                   
+                                    <input type="number" id="amount" name="amount" formControlName="amount"
+                                        placeholder="Rs/-" required />
+                                    :
+                                    <input type="number" min="0" max="99" value="pais" id="pais" formControlName="pais"
+                                        placeholder="Ps/-" />
+                                </div>
+                                <div class="input-group mt-3 mb-3">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text text-info">Recepientname</span>
+                                    </div>
+                                    <input type="text" name="firstname" pattern='[A-Za-z\\s]*' id="firstname"
+                                        placeholder="Firstname" formControlName="firstname" required />
+                                    <input type="text" name="lastname" pattern='[A-Za-z\\s]*' id="lastname"
+                                        placeholder="LastName" formControlName="lastname" required />
+                                </div>
+                            </div>
+                          
+                                <fieldset class="border p-2 ">
+                                    <legend class="w-auto  text-center text-dark ">ShippingAddress</legend>
+                                    <div class="jumbotron">
+                                        <div class="input-group mt-3 mb-3">
+                                            <div class="input-group bg-black">
+                                                <span class="input-group-text text-info">Street Address</span>
+                                            </div>
+                                            <input type="text" name="shippingadd" id="shippingadd"
+                                                placeholde="Shipping Address" formControlName="shippingadd" required />
+                                        </div>
+                                        <div class="input-group mt-3 mb-3">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text text-info">City</span>
+                                            </div>
+                                            <input type="text" name="city" id="city" placeholder="City"
+                                                formControlName="city" required />
+                                            <span class="input-group-text text-info">State</span>
+                                            <input type="text" name="state" formControlName="state" id="state"
+                                                placeholde="State" />
+                                        </div>
+                                        <div class="input-group mt-3 mb-3">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text text-info">Country</span>
+                                            </div>
+                                            <input list="country" name="country" formControlName="country" type="text"
+                                                placeholde="country">
+                                            <datalist id="country">
+                                                <option value="India">
+                                                <option value="US">
+                                                <option value="UK">
+                                            </datalist>
+                                            <span class="input-group-text text-info">PinCode</span>
+                                            <input type="text" name="pincode" pattern="[0-9]*" minlength="6"
+                                                maxlength="6" id="pincode" formControlName="pincode"
+                                                placeholde="pincode" />
+                                        </div>
+
+                                    </div>
+                                </fieldset>
+                                <div class="jumbotron bg-transparent">
+                                    <div class="input-group mt-3 mb-3">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text text-info">BuyersName</span>
+                                        </div>
+                                        <input type="text" name="bfirstname" id="bfirstname" pattern='[A-Za-z\\s]*'
+                                            placeholder="Firstname" formControlName="bfirstname" required />
+                                        <input type="text" name="blastname" id="blastname" pattern='[A-Za-z\\s]*'
+                                            placeholder="LastName" formControlName="blastname" required />
+                                    </div>
+                                    <div class="input-group mt-3 mb-3">
+                                        <div class="input-group">
+                                            <span class="input-group-text text-info">PhoneNumber:</span>
+                                            <input type="text" pattern="[0-9]" size="1" value="+91" readonly="readonly"
+                                                id="t11" />&nbsp;-
+                                            <input type="text" pattern="[6-9]" size="1" name="a" maxlength="1"
+                                                formControlName="ph1" id="t12" required />&nbsp;
+                                            <input type="text" pattern="[0-9]" size="1" name="b" maxlength="1"
+                                                formControlName="ph2" required />&nbsp;
+                                            <input type="text" pattern="[0-9]" size="1" name="c" maxlength="1"
+                                                formControlName="ph3" required />&nbsp;
+                                            <input type="text" pattern="[0-9]" size="1" name="d" maxlength="1"
+                                                formControlName="ph4" required />&nbsp;
+                                            <input type="text" pattern="[0-9]" size="1" name="e" maxlength="1"
+                                                formControlName="ph5" required />&nbsp;
+                                            <input type="text" pattern="[0-9]" size="1" name="f" maxlength="1"
+                                                formControlName="ph6" required />&nbsp;
+                                            <input type="text" pattern="[0-9]" size="1" name="g" maxlength="1"
+                                                formControlName="ph7" required />&nbsp;
+                                            <input type="text" pattern="[0-9]" size="1" name="h" maxlength="1"
+                                                formControlName="ph8" required />&nbsp;
+                                            <input type="text" pattern="[0-9]" size="1" name="i" maxlength="1"
+                                                formControlName="ph9" required />&nbsp;
+                                            <input type="text" pattern="[0-9]" size="1" name="j" maxlength="1"
+                                                formControlName="ph10" required />&nbsp;<br />
+                                        </div>
+                                    </div>
+                                    <div class="input-group mt-3 mb-3">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text text-info">Email</span>
+                                        </div>
+                                        <input type="email" name="mail" id="mail" placeholder="email"
+                                            formControlName="mail" required />
+                                    </div>
+                                    <div class="row justify-content-center">
+                                        <button type="submit" class="btn btn-primary" [disabled]="!checker.valid" (click)="addOrder()"> Place
+                                            Order </button>
+                                        <button class="btn btn-danger" type="reset"> Reset Data </button>
+                                    </div>
+                                </div>
+                        </form>
+                    </div>
+                </div> -->
+
+
+
+                <div class="  text-center">
+                    <div class="h1">PlaceOrder</div>
+                     </div>
+                     <div class="container bg-transparent">
+                         <div class="row">
+                         <div class="col">
+                                 <div class="card shadow bg-transparent">
+                                     <div class="card-body ">
+                                         <form [formGroup]="checker">
+                                            <div class="input-group mb-3">
+                                    
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text text-info">ID</span>
+                                                </div>
+                                               
+                                                <input type="number" id="id" name="id" formControlName="id"
+                                                   required />
+                                            </div>
+                                             <div class="input-group mb-3" >
+                                                 <div class="input-group-prepend">
+                                                     <span class="input-group-text ">Gift Card Amount</span>
+                                                 </div>
+                                                 <input type="number" class="form-control"  id="amount" formControlName="amount" placeholder="Rs/-" required />  
+                                                 :
+                                                    <input type="number" class="form-control" formControlName="paise"  min="0"  max="99" value="pais" id="pais" placeholder="Ps/-" />
+                                             </div>
+                                             <div class="input-group mt-3 mb-3" >
+                                                 <div class="input-group-prepend">
+                                                     <span class="input-group-text">Recepientname</span>
+                                                 </div>
+                                                 <input type="text" formControlName="firstname" class="form-control"  pattern='[A-Za-z\\s]*' id="firstname" placeholder="Firstname"  required/>
+                                                 <input type="text" formControlName="lastname" class="form-control" pattern='[A-Za-z\\s]*' id="lastname" placeholder="LastName"  required/> 
+                                             </div>
+                                             <fieldset class="border p-2">
+                                                 <legend class="w-auto  text-center text-black">ShippingAddress</legend>
+                                                 <div class="jumbotron bg-muted">
+                                                 <div class="input-group mt-3 mb-3" >
+                                                     <div class="input-group-prepend">
+                                                         <span class="input-group-text">Street Address</span>
+                                                     </div>
+                                                     <input type="text" class="form-control" formControlName="shippingadd" id="shippingadd" placeholde="Shipping Address"required /> 
+                                                 </div>
+                                                 <div class="input-group mt-3 mb-3" >
+                                                     <div class="input-group-prepend">
+                                                         <span class="input-group-text">City</span>
+                                                     </div>
+                                                     <input type="text" class="form-control" formControlName="city" id="city" placeholder="City" required/>
+                                                     <span class="input-group-text text-info">State</span>
+                                                  <input type="text" class="form-control" formControlName="state" id="state"placeholde="State"/>
+                                                 </div>
+                                                 <div class="input-group mt-3 mb-3">
+                                                     <div class="input-group-prepend">
+                                                         <span class="input-group-text">Country</span>
+                                                     </div>
+                                                     <input list="country" class="form-control" formControlName="country" type="text"placeholde="country">
+                                                     <datalist id="country">
+                                                         <option value="India" >
+                                                         <option value="US" >
+                                                         <option value="UK" >
+                                                     </datalist>
+                                                     <span class="input-group-text">PinCode</span>
+                                                  <input type="text" class="form-control" formControlName="pincode" pattern="[0-9]*" minlength="6" maxlength="6" id="pincode" placeholde="pincode"/>
+                                                 </div>
+                                               </div>
+                                             </fieldset>  
+                                          <div class="input-group mt-3 mb-3" >
+                                                 <div class="input-group-prepend">
+                                                     <span class="input-group-text" >BuyersName</span>
+                                                 </div>
+                                                 <input type="text" class="form-control" formControlName="bfirstname" id="bfirstname"  pattern='[A-Za-z\\s]*' placeholder="Firstname" required/>
+                                                 <input type="text" class="form-control" formControlName="blastname" id="blastname"  pattern='[A-Za-z\\s]*' placeholder="LastName"  required/> 
+                                             </div>
+                                             <div class="input-group mt-3 mb-3" >
+                                                 <div class="input-group">
+                                                     <span class="input-group-text">PhoneNumber:</span>
+                                                     <input type="number" class="form-control" pattern="[0-9]" size="1" value="+91" readonly="readonly" id="t11" disabled/>&nbsp;-
+                                                     <input type="number" class="form-control" pattern="[6-9]" size="1" formControlName="ph1" maxlength="1" id="ph1"  required/>&nbsp;
+                                                     <input type="number" class="form-control" pattern="[0-9]" size="1" formControlName="ph2" maxlength="1" id="ph2"  required/>&nbsp;
+                                                     <input type="number" class="form-control" pattern="[0-9]" size="1" formControlName="ph3" maxlength="1" id="ph3"  required/>&nbsp;
+                                                     <input type="number" class="form-control" pattern="[0-9]" size="1" formControlName="ph4" maxlength="1" id="ph4"  required/>&nbsp;
+                                                     <input type="number" class="form-control" pattern="[0-9]" size="1" formControlName="ph5" maxlength="1" id="ph5"  required/>&nbsp;
+                                                     <input type="number" class="form-control" pattern="[0-9]" size="1" formControlName="ph6" maxlength="1" id="ph6"  required/>&nbsp;
+                                                     <input type="number" class="form-control" pattern="[0-9]" size="1" formControlName="ph7" maxlength="1" id="ph7"  required/>&nbsp;
+                                                     <input type="number" class="form-control" pattern="[0-9]" size="1" formControlName="ph8" maxlength="1" id="ph8"  required/>&nbsp;
+                                                     <input type="number" class="form-control" pattern="[0-9]" size="1" formControlName="ph9" maxlength="1" id="ph9"  required/>&nbsp;
+                                                     <input type="number" class="form-control" pattern="[0-9]" size="1" formControlName="ph10" maxlength="1" id="ph10" required/>&nbsp;<br />
+                                                 </div>
+                                             </div>
+                                             <div class="input-group mt-3 mb-3" >
+                                                 <div class="input-group-prepend">
+                                                     <span class="input-group-text">Email</span>
+                                                 </div>
+                                                 <input type="text" class="form-control" formControlName="mail" id="email" placeholder="Enter valid Mail" required/>
+                                             </div>
+                                             <div class="row justify-content-center">
+                                                 <button type="button" class="btn btn-success mx-2" (click)="addOrder()" [disabled]="!checker.valid"> Place Order </button>
+                                                 <button class="btn btn-danger"  type="reset"> Reset Data </button>
+                                             </div>
+                                        </form>
+                                     </div>
+                                 </div>
+                         </div>
+                     </div>
+                 </div>
+
+
+            </div>
+        </div>
+    </div></div> </div>
+

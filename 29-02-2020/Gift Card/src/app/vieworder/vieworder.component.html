@@ -1,0 +1,46 @@
+<div class="row mx-3" style="min-height: 60vh;">
+    <div class="row my-2 mx-3 ">
+        <div class="col-2 bg-transparent border">
+            <div class="sidenav">
+                <!-- <div class="list-group list-group-flush"> -->
+                <a routerLink="/home" id="widget"
+                    class="list-group-item list-group-item-action bg-transparent btn-lg text-dark">Home</a>
+                <a routerLink="/placeorder" id="widget"
+                    class="list-group-item list-group-item-action bg-transparent btn-lg text-dark">Place Order</a>
+                <a routerLink="/view" id="widget"
+                    class="list-group-item list-group-item-action bg-transparent btn-lg text-dark">View Orders</a>
+                <a routerLink="/contact" id="widget"
+                    class="list-group-item list-group-item-action bg-transparent btn-lg text-dark">Contacts</a>
+                <!-- </div> -->
+            </div>
+        </div>
+        
+        <div class="col bg-transparent table-responsive mx-2">
+            <div class="row justify-content-center">
+            <h2> List of Orders</h2>
+            <table class="table table-striped text-black table-hover">
+                <thead class="bg-dark text-white">
+                    <tr>
+
+                        <th>buyersName</th>
+                        <th>shippingAddress</th>
+                        <th>city</th>
+                        <th>amount</th>
+                        <th>phone</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let ord of order">
+
+                        <td>{{ord.bfirstname}} {{ord.blastname}}</td>
+                        <td>{{ord.shippingadd}}</td>
+                        <td>{{ord.city}}</td>
+                        <td>{{ord.amount+"."+ord.paise|currency:"INR"}}</td>
+                        <td>{{ord.ph1}}{{ord.ph2}}{{ord.ph3}}{{ord.ph4}}{{ord.ph5}}{{ord.ph6}}{{ord.ph7}}{{ord.ph8}}{{ord.ph9}}{{ord.ph10}}
+                        </td>
+
+                    </tr>
+                </tbody>
+            </table></div>
+        </div>
+    </div>
