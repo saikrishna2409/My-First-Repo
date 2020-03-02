@@ -1,0 +1,53 @@
+<!-- <div id="body" class="container mt-5">    
+    <h1 class="text-center text-uppercase">Stock Exchanges</h1>
+    <div class="col-9 mx-auto">
+        <table class="table my-4">
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Stock Exchange</th>
+                    <th>Remarks</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>BSE</td>
+                    <td>Good</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>NSE</td>
+                    <td>Good</td>
+                </tr>
+            </tbody>
+        </table>
+        <button class="btn btn-block btn-outline-secondary" (click)="addStock()">Add Stock Exchange</button>
+    </div>
+</div> -->
+<h2> Stock Details</h2>
+  <table class="table table-striped">
+    <thead>
+    <tr>
+        <th>Id</th>
+        <th>Stock Exchange Name</th>
+        <th>Remarks</th>
+        <th>Actions</th>
+
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let stk of stock">
+      <td>{{stk.id}}</td>
+      <td>{{stk.stockname}}</td>
+      <td>{{stk.remarks}}</td>    
+      <td><button class ="btn btn-danger" (click)="deleteStock(stk)">Delete</button>
+      <button class ="btn btn-primary" (click)="updateStock(stk)">Update</button>     
+      </td>
+    </tr>
+    </tbody>
+  </table>
+  <div class="text-center">
+  <button class="btn  btn-warning" >
+    <a  routerLink="/addstock">Add Stock</a></button>
+</div>
