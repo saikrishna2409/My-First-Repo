@@ -237,6 +237,20 @@ Day 51
 29-02-2020
 -------
 	Hackthon on Angular(codesprint)
+
+Day 52
+02-03-2020
+-------
+	Microservices 
+	project work
+Day 53
+03-03-2020
+-------
+	
+	spring cloud-starter
+	ribbon
+	feign basics
+	netflix eureka
 	
 
 
