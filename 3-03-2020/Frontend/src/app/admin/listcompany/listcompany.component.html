@@ -1,0 +1,33 @@
+<h2> List of Companies</h2>
+  <table class="table table-striped">
+    <thead>
+    <tr>
+      <th>Id</th>
+      <th>Sector</th>
+      <th>Company Name</th>
+      <th>CEO</th>
+      <th>BOD</th>
+      <th>StockList</th>
+      <th>TurnOver</th>
+      <th>Actions</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let comp of company">
+      <td>{{comp .id}}</td>
+      <td>{{comp.sector}}</td>
+      <td>{{comp.companyname}}</td>
+      <td>{{comp.ceo}}</td>
+      <td>{{comp.bod}}</td>
+      <td>{{comp.stockList}}</td>
+      <td>{{comp.turnover}}</td>
+      <td><button class ="btn btn-danger" (click)="deleteCompany(comp)">Delete</button>
+      <button class ="btn btn-primary" (click)="updateCompany(comp)">Update</button>
+      </td>
+    </tr>
+    </tbody>
+  </table>
+  <div class="text-center">
+  <button class="btn  btn-warning" >
+    <a  routerLink="/adminadddetails">Add Company</a></button>
+  </div>
