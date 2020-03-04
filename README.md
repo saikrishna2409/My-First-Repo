@@ -251,6 +251,10 @@ Day 53
 	ribbon
 	feign basics
 	netflix eureka
+Day 54
+04-03-2020
+---------
+	Spring Boot Junit Testing
 	
 
 
