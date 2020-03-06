@@ -1,0 +1,16 @@
+/* .footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color:blue;
+    color: white;
+    text-align: center;
+ } */
+.bg-blue {
+    background-image: url('/assets/ol.jpg');
+  }
+
+main{
+  height: 150vh;
+}

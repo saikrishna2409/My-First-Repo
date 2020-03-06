@@ -263,6 +263,11 @@ Day 55
 	api gateway
 	project work
 	
+Day 56
+06-03-2020
+-----------
+	Docker
+	project work
 
 
 

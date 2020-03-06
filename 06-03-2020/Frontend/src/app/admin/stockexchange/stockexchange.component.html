@@ -1,0 +1,29 @@
+<div class="table-responsive">
+<h2> Stock Details</h2>
+
+  <table class="table table-striped">
+    <thead>
+    <tr>
+        <th>Id</th>
+        <th>Stock Exchange Name</th>
+        <th>Remarks</th>
+        <th>Actions</th>
+
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let stk of stock">
+      <td>{{stk.id}}</td>
+      <td>{{stk.stockname}}</td>
+      <td>{{stk.remarks}}</td>    
+      <td><button class ="btn btn-danger" (click)="deleteStock(stk)">Delete</button>
+      <button class ="btn btn-primary" (click)="updateStock(stk)">Update</button>     
+      </td>
+    </tr>
+    </tbody>
+  </table>
+  <div class="text-center">
+  <button class="btn  btn-warning" >
+    <a  routerLink="/addstock">Add Stock</a></button>
+</div>
+</div>
