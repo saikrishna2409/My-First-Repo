@@ -268,6 +268,13 @@ Day 56
 -----------
 	Docker
 	project work
+Day 57
+07-03-2020
+---------
+	Login Credentials of user and and admin in project work
+	HighCharts
+	Excel document upload
+
 
 
 

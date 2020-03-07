@@ -1,0 +1,78 @@
+<nav class="navbar navbar-expand-md navbar-light" >
+    
+  <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+                <a [routerLink]="['/viewusers']"class="nav-link"><button class="btn btn--primary"> USERS</button></a>
+            </li>
+            <li class="nav-item">
+                <a [routerLink]="['/viewipo']" src=""class="nav-link" ><button class="btn btn--primary"> IPOS</button></a>
+            </li>
+            <li class="nav-item">
+                <a [routerLink]="['/listcompany']" class="nav-link"><button class="btn btn--primary">COMPANY</button></a>
+            </li>
+            <li class="nav-item">
+                <a [routerLink]="['/stockexchange']" class="nav-link"><button class="btn btn--primary">STOCK EXCHANGE</button></a>
+            </li>
+            <li class="nav-item">
+                <a [routerLink]="['/sectorlist']" class="nav-link"><button class="btn btn--primary">SECTOR</button></a>
+            </li>
+            <li class="nav-item">
+                <a [routerLink]="['/stockpricelist']" class="nav-link"><button class="btn btn--primary">Stockprice</button></a>
+            </li>
+        
+            
+        </ul>
+    </div>
+</nav> 
+
+
+<div class="container mt-5">
+<div class="row justify:content-center ">
+<div class="col-md-4 ">
+    <div class="card text-center " routerLink="/admindocupload">
+          <div class="card-body">
+              <h4 class="card-title ">Import Data</h4>
+          </div>
+    </div>
+</div>
+<div class="col-md-4">
+    <div class="card  text-center " routerLink="/adminadddetails">
+          <div class="card-body">
+              <h4 class="card-title ">ManageCompany</h4>
+          </div>
+    </div>
+</div>
+<div class="col-md-4">
+    <div class="card   text-center" routerLink="/addstock">
+          <div class="card-body">
+              <h4 class="card-title ">Manage StockExchange</h4>
+          </div>
+    </div>
+</div>
+<div class="col-md-4">
+    <div class="card  text-center " routerLink="/ipolist">
+          <div class="card-body">
+              <h4 class="card-title ">ManageIpoDetails</h4>
+          </div>
+    </div>
+</div>
+<div class="col-md-4">
+    <div class="card  text-center " routerLink="/sector">
+          <div class="card-body">
+              <h4 class="card-title ">Manage Sector</h4>
+          </div>
+    </div>
+</div>
+<div class="col-md-4">
+    <div class="card  text-center " routerLink="/stockprice">
+          <div class="card-body">
+              <h4 class="card-title ">Manage Stock Price</h4>
+          </div>
+    </div>
+</div>
+</div>
+</div>
