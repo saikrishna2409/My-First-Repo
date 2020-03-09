@@ -1,0 +1,74 @@
+<div class="row justify-content-center">
+  <div class="container ">
+    <h2> List of IPO</h2>
+
+    <div class="table-responsive">
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>Id</th>
+            <th>Company</th>
+            <th>StockExchange</th>
+            <th>PriceShare</th>
+            <th>NoofShares</th>
+            <th>Address</th>
+            <th>City</th>
+            <th>State</th>
+            <th>Pincode</th>
+            <th>Date</th>
+            <th>Actions</th>
+
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let user of ipo">
+            <td>{{user.id}}</td>
+            <td>{{user.company}}</td>
+            <td>{{user.stockexchange}}</td>
+            <td>{{user.priceshare}}</td>
+            <td>{{user.noofshares}}</td>
+            <td>{{user.address}}</td>
+            <td>{{user.city}}</td>
+            <td>{{user.state}}</td>
+            <td>{{user.pincode}}</td>
+            <td>{{user.date}}</td>
+            <td><button class="btn btn-danger" (click)="deleteIpo(user)">Delete</button>
+              <button class="btn btn-primary" (click)="updateIpo(user)">Update</button><button class="btn  btn-warning"
+                (click)="getCompany(comp.id)">GetCompany</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="text-center">
+      <button class="btn  btn-warning">
+        <a routerLink="/ipolist">Add Ipo</a></button>
+    </div>
+
+    <table *ngIf=ipo1 class="table table-striped">
+
+      <tr>
+        <th>Id</th>
+        <th>Sector</th>
+        <th>Company Name</th>
+        <th>CEO</th>
+        <th>BOD</th>
+        <th>StockList</th>
+        <th>TurnOver</th>
+
+      </tr>
+
+
+      <tr>
+        <td>{{ipo1.id}}</td>
+        <td>{{ipo1.sector}}</td>
+        <td>{{ipo1.companyname}}</td>
+        <td>{{ipo1.ceo}}</td>
+        <td>{{ipo1.bod}}</td>
+        <td>{{ipo1.stockList}}</td>
+        <td>{{ipo1.turnover}}</td>
+      </tr>
+
+    </table>
+  </div>
+</div>
