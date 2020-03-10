@@ -279,7 +279,12 @@ Day 58
 --------
 	Security of login credentials
 	projectwork
-
+Day 59
+10-03-2020
+--------
+	Jenkins Installation 
+	Jenkin programs
+	jenkin pipeline
 
 
 
