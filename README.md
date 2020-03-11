@@ -286,7 +286,10 @@ Day 59
 	Jenkin programs
 	jenkin pipeline
 
-
+Day 60
+11-03-2020
+-------
+	All validations in project and checking the working of project
 
 
 
