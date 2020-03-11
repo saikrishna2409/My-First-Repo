@@ -1,0 +1,22 @@
+/* .footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color:blue;
+    color: white;
+    text-align: center;
+ } */
+.bg-blue {
+    background-image: url('/assets/l.jpg');
+    background-size:cover;
+    /* background-image: url('/assets/lop.gif');
+    background-image: url('/assets/klo.gif'); */
+  }
+
+main{
+  height: 150vh;
+}
+.page-footer {
+  margin:0;
+}  

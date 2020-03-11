@@ -1,0 +1,14 @@
+{
+  "stock": [
+    {
+      "id": 1,
+      "stockname": "NSE",
+      "remarks": "Ok"
+    },
+    {
+      "id": 2,
+      "stockname": "BSE",
+      "remarks": "OkK"
+    }
+  ]
+}
