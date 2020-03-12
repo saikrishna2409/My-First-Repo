@@ -1,0 +1,36 @@
+<h2> Ipo Details</h2>
+  <table class="table table-striped">
+    <thead>
+    <tr>
+      <th>Id</th>
+      <th>Company</th>
+      <th>StockExchange</th>
+      <th>PriceShare</th>
+      <th>NoofShares</th>
+      <th>Address</th>
+      <th>City</th>
+      <th>State</th>
+      <th>Pincode</th>
+      <th>Date</th>
+
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let user of ipo">
+      <td>{{user.id}}</td>
+      <td>{{user.company}}</td>
+      <td>{{user.stockexchange}}</td>
+      <td>{{user.priceshare}}</td>
+      <td>{{user.noofshares}}</td>
+      <td>{{user.address}}</td>
+      <td>{{user.city}}</td>
+      <td>{{user.state}}</td>
+      <td>{{user.pincode}}</td>
+      <td>{{user.date}}</td>
+      <td><button class ="btn btn-danger" (click)="deleteIpo(user)">Delete</button>
+      <button class ="btn btn-primary" (click)="updateIpo(user)">Update</button>
+      </td>
+      
+    </tr>
+    </tbody>
+  </table>

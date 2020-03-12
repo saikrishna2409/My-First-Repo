@@ -1,0 +1,124 @@
+<!-- <nav class="navbar navbar-expand-md navbar-light" >
+    
+  <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+                <a [routerLink]="['/viewusers']"class="nav-link"><button class="btn btn--primary"> USERS</button></a>
+            </li>
+            <li class="nav-item">
+                <a [routerLink]="['/ipolist']" src=""class="nav-link" ><button class="btn btn--primary"> IPOS</button></a>
+            </li>
+            <li class="nav-item">
+                <a [routerLink]="['/adminadddetails']" class="nav-link"><button class="btn btn--primary">COMPANY</button></a>
+            </li>
+            <li class="nav-item">
+                <a [routerLink]="['/addstock']" class="nav-link"><button class="btn btn--primary">STOCK EXCHANGE</button></a>
+            </li>
+            <li class="nav-item">
+                <a [routerLink]="['/sector']" class="nav-link"><button class="btn btn--primary">SECTOR</button></a>
+            </li>
+            <li class="nav-item">
+                <a [routerLink]="['/stockprice']" class="nav-link"><button class="btn btn--primary">STOCKPRICE</button></a>
+            </li>
+            
+                <li class="nav-item mx-2"><a routerLink="" routerLinkActive="active" class="btn btn-success fa fa-sign-out">
+                    Logout</a>
+            
+            
+        </ul>
+    </div>
+</nav> 
+
+
+<div class="container mt-5">
+<div class="row justify:content-center ">
+<div class="col-md-4 ">
+    <div class="card text-center " routerLink="/admindocupload">
+          <div class="card-body">
+              <h4 class="card-title ">Import Data</h4>
+          </div>
+    </div>
+</div>
+<div class="col-md-4">
+    <div class="card  text-center " routerLink="/listcompany">
+          <div class="card-body">
+              <h4 class="card-title ">ManageCompany</h4>
+          </div>
+    </div>
+</div>
+<div class="col-md-4">
+    <div class="card   text-center" routerLink="/stockexchange">
+          <div class="card-body">
+              <h4 class="card-title ">Manage StockExchange</h4>
+          </div>
+    </div>
+</div>
+<div class="col-md-4">
+    <div class="card  text-center " routerLink="/viewipo">
+          <div class="card-body">
+              <h4 class="card-title ">ManageIpoDetails</h4>
+          </div>
+    </div>
+</div>
+<div class="col-md-4">
+    <div class="card  text-center " routerLink="/sectorlist">
+          <div class="card-body">
+              <h4 class="card-title ">Manage Sector</h4>
+          </div>
+    </div>
+</div>
+<div class="col-md-4">
+    <div class="card  text-center " routerLink="/stockpricelist">
+          <div class="card-body">
+              <h4 class="card-title ">Manage Stock Price</h4>
+          </div>
+    </div>
+</div>
+</div>
+</div> -->
+<li class="nav-item">
+    <a class="nav-link" routerLink="/logout">Logout</a>
+  </li>
+<div class="container" >
+<marquee direction="left" behaviour="scroll" scrollamount="20" onmouseover="this.stop()" onmouseout="this.start()" loop="3">
+    <div class="card-shadow"> 
+        
+            <div class="card bg-transparent"> 
+                <div class="card-header">
+
+                     <a routerLink='/viewusers'>
+                        
+                        <img src="../../../assets/users.jpg"  />
+                        
+                    </a>
+                    <a routerLink='/admindocupload'>
+                        
+                        <img src="../../../assets/importdata.jpg"  />
+                    </a>
+                    
+                    <a routerLink='//listcompany'>
+                        <img src="../../../assets/managecompany.jpg">
+                    </a>
+                    <a routerLink='/viewipo'>
+                        <img src="../../../assets/manageipo.jpg">
+                    </a>
+                    <a routerLink="/stockexchange">
+                        <img src="../../../assets/managestockexchange.jpg">
+                    </a>
+                    <a routerLink='/stockpricelist'>
+                        <img src="../../../assets/managestockprice.jpg">
+                    </a>
+                    <a routerLink='/sectorlist'>
+                        <img src="../../../assets/managesector.png">
+                    </a>
+                </div>
+            </div> 
+        
+     </div>
+   
+    
+</marquee>
+</div>

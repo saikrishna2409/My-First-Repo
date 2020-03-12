@@ -1,0 +1,25 @@
+<div id="body" class="container mt-5">
+  <div class="row">
+      <div class="col-3"></div>
+      <div class="col-6">
+        <form class="form-group border p-5 border-curved mt-5"  [formGroup]="compare">
+          <label for="companyname">Company Name 1:</label><br>
+          <input list="company1"  class="form-control">
+          <datalist id="company1">
+              <option *ngFor="let comp of company" value={{comp.companyname}}>{{comp.companyname}}</option>
+          </datalist><br>
+          <label for="companyname">Company Name 2:</label>
+          <input list="company2"  class="form-control">
+          <datalist id="company2">
+              <option *ngFor="let comp of company" value={{comp.companyname}}>{{comp.companyname}}</option>
+          </datalist><br>
+          
+          <div class="text-center">
+              <div class="col">
+                  <button type="submit" class="btn btn-success"  (click)="compareCompany()">Compare</button>
+              </div>
+          </div>
+      </form>
+      </div>
+  </div>
+  </div>
