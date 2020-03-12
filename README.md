@@ -291,5 +291,10 @@ Day 60
 -------
 	All validations in project and checking the working of project
 
+Day 61
+12-03-2020
+-------
+	Charts
+	projectwork
 
 
