@@ -16,6 +16,6 @@ export class LogoutComponent implements OnInit {
     sessionStorage.removeItem('username')
     // sessionStorage.removeItem('userType')
     alert("logged out successfully")
-    this.router.navigate(['/login'])
+    this.router.navigate(['/home'])
   }
 }

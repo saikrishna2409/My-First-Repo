@@ -18,8 +18,9 @@
             <a class="nav-link" routerLink="#"><i class="fa fa-phone-square"></i>Contact</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" routerLink="/createaccount">Signup</a>
+            <a class="nav-link" routerLink="/logout" *ngIf="userLoggedIn"> <i class="fa fa-phone-square"></i>Logout</a>
           </li>
+          
         </ul>
         
         </div>
