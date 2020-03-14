@@ -1,0 +1,35 @@
+
+ <div class="container">
+  <div class="row m-4">
+      <div class="col">
+          <div class="pt-4">
+              <div class="card shadow">
+                  <p class="h4 card-header text-center">StockExchange</p>
+                  <div class="card-body bg-light">
+
+                      <p class="card-text">Details:&nbsp;</p>
+                      <form [formGroup]="addStockForm" (ngSubmit)="onSubmit()">
+                          <div class="form-group">
+                              <label for="id">Id</label>
+                              <input type="number" id="id" formControlName="id" class="form-control">
+                          </div>
+                          <div class="form-group">
+                              <label for="stockname">StockName</label>
+                              <input type="text" id="stockname" formControlName="stockname" class="form-control">
+                          </div>
+                          <div class="form-group">
+                              <label for="remarks">Remarks</label>
+                              <textarea type="text" id="remarks" formControlName="remarks" class="form-control"></textarea>
+                          </div>
+                          <div>
+                            <button class="btn btn-success" routerLink="/stockexchange" (click)="addStock()">Add</button>
+                                              <button type="reset" class="btn btn-danger ml-2 ">Reset</button>
+                          </div>
+                      </form>
+
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>

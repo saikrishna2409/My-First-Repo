@@ -1,0 +1,54 @@
+<div class="container">
+    <div class="row m-2">
+        <div class="col-md-6 offset-md-3" style="height: 50vh;">
+            <div class="card shadow m-auto">
+                <p class="h4 card-header text-center">Login</p>
+                <div class="card-body bg-light">
+                    <p class="card-text">Details:&nbsp;</p>
+                    <form [formGroup]="loginForm">
+                        <div class="input-group mt-3 mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="username" name="username"><i
+                                        class="fa fa-id-card"></i>Username</span>
+                            </div>
+                            <input type="text" class="form-control" formControlName="username" />
+                        </div>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="password" name="password"> <i
+                                        class="fas fa-key"></i>Password</span>
+                            </div>
+                            
+                            <input type="password" class="form-control" formControlName="password" />
+                        </div>
+
+                        <div class="row justify-content-center">
+                            <button class="btn btn-success" (click)="isValid()" [disabled]="!loginForm.valid"
+                                type="submit">Login</button>
+                            <button type="reset" class="btn btn-danger ml-2 ">Reset</button></div>
+                    </form>
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<router-outlet></router-outlet>
+
+
+<div id="alert" class="modal fade" tabindex="-1" id="myModal">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-body text-center">
+            {{message}}
+          </h5>
+          <button class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-block btn-danger" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
